@@ -1,5 +1,5 @@
 body {
-  font-size: 18px; /* Aumenta o tamanho base */
+  font-size: 20px; /* Aumenta o tamanho base */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -99,7 +99,7 @@ footer {
     content: attr(data-label);
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
   body {
     font-size: 20px;
   }
@@ -136,7 +136,7 @@ body {
 }
 
 /* Responsividade para telemóveis */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   body {
     font-size: 20px;
   }
