@@ -7,19 +7,20 @@
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+
   <header>
     <nav>
       <a href="index.html">Início</a>
       <a href="horario.html" class="ativo">Horário</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="contactos.html">Contactos</a>
     </nav>
   </header>
 
   <main class="horarios-container">
-    <h1>Horário de Funcionamento</h1>
+    <h1>Horário das Lojas</h1>
 
     <section class="local">
-      <h2>📍 Parque Urbano, Av. do Rio Tinto, 4435-318 Rio Tinto</h2>
+      <h2>Parque Urbano, Av. do Rio Tinto</h2>
       <table>
         <thead>
           <tr>
@@ -28,14 +29,20 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>Segunda a Sexta</td><td>08:00 - 22:00</td></tr>
-          <tr><td>Sábado e Domingo</td><td>09:00 - 00:00</td></tr>
+          <tr>
+            <td data-label="Dia">Segunda a Sexta</td>
+            <td data-label="Horário">8:00 – 22:00</td>
+          </tr>
+          <tr>
+            <td data-label="Dia">Sábado e Domingo</td>
+            <td data-label="Horário">9:00 – 00:00</td>
+          </tr>
         </tbody>
       </table>
     </section>
 
     <section class="local">
-      <h2>📍 R. da Ferraria 239, 4435-250 Rio Tinto</h2>
+      <h2>R. da Ferraria 239, Rio Tinto</h2>
       <table>
         <thead>
           <tr>
@@ -44,8 +51,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>Segunda a Sábado</td><td>07:00 - 20:00</td></tr>
-          <tr><td>Domingo</td><td>07:00 - 13:00</td></tr>
+          <tr>
+            <td data-label="Dia">Segunda a Sábado</td>
+            <td data-label="Horário">7:00 – 20:00</td>
+          </tr>
+          <tr>
+            <td data-label="Dia">Domingo</td>
+            <td data-label="Horário">7:00 – 13:00</td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -54,5 +67,6 @@
   <footer>
     <p>&copy; 2025 Biscuit. Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>
