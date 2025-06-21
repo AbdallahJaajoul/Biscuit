@@ -1,1 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fff7f1;
+  color: #333;
+}
 
+header {
+  background-color: #e29f81;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.ativo {
+  text-decoration: underline;
+}
+
+main.horarios-container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #aa5533;
+}
+
+.local {
+  margin-bottom: 40px;
+}
+
+.local h2 {
+  color: #aa5533;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f6e4da;
+}
+
+footer {
+  background-color: #e29f81;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td::before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-weight: bold;
+    color: #aa5533;
+    content: attr(data-label);
+  }
+}
