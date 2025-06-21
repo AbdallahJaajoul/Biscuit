@@ -115,4 +115,41 @@ footer {
   p, li, a {
     font-size: 18px;
   }
+    
+/* Tamanho base para desktop */
+body {
+  font-size: 18px;
+}
+
+/* Estilo específico para a página de bolos */
+#bolos h2 {
+  font-size: 28px;
+}
+
+#bolos p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#bolos img {
+  max-width: 100%;
+}
+
+/* Responsividade para telemóveis */
+@media (max-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+
+  #bolos h2 {
+    font-size: 26px;
+  }
+
+  #bolos p {
+    font-size: 18px;
+  }
+
+  a img {
+    width: 100% !important;
+  }
 }
