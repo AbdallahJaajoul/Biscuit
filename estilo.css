@@ -1,50 +1,77 @@
-#horario {
-  background-color: #f8f8f8;
-  border-radius: 12px;
-  padding: 30px;
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: 'Arial', sans-serif;
-}
-
-#horario h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-#horario .loja h3 {
-  font-size: 20px;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-#horario ul {
-  list-style-type: none;
+/* Reset básico */
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-#horario li {
-  font-size: 18px;
+body {
+  background: #fff8f0;
   color: #333;
-  margin-bottom: 5px;
+  padding: 20px;
+  line-height: 1.5;
 }
 
-/* Para telemóveis */
-@media (max-width: 768px) {
-  #horario {
-    padding: 20px;
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  color: #a65c3a;
+}
+
+/* Seções das lojas */
+.loja {
+  background-color: #f6e6d9;
+  border: 2px solid #d1b89d;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 8px rgba(166, 92, 58, 0.3);
+}
+
+.loja h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #8c4c22;
+}
+
+.loja ul {
+  list-style-type: none;
+}
+
+.loja ul li {
+  font-size: 1.1rem;
+  padding: 6px 0;
+  border-bottom: 1px solid #d1b89d;
+}
+
+/* Responsividade para telemóveis */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
   }
 
-  #horario h2 {
-    font-size: 24px;
+  header h1 {
+    font-size: 1.8rem;
   }
 
-  #horario .loja h3 {
-    font-size: 18px;
+  .loja {
+    padding: 15px;
   }
 
-  #horario li {
-    font-size: 16px;
+  .loja h2 {
+    font-size: 1.3rem;
+  }
+
+  .loja ul li {
+    font-size: 1rem;
   }
 }
